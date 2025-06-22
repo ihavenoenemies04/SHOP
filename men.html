@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blush Boutique | Men's Collection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">Shop</a>
+        <div class="nav-links">
+          <a href="index.html#new-arrivals">New Arrivals</a>
+          <a href="index.html#women">Women</a>
+          <a href="men.html" class="active">Men</a>
+          <a href="index.html#sale">Sale</a>
+        </div>
+        <div class="nav-icons">
+          <a href="#"><i class="fas fa-search"></i></a>
+          <a href="#"><i class="fas fa-user"></i></a>
+          <a href="#"><i class="fas fa-shopping-bag"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero men-hero">
+      <div class="hero-content">
+        <h1>Men's Collection</h1>
+        <p>Elevate your wardrobe with our premium menswear</p>
+        <a href="#featured" class="btn">Shop Now</a>
+      </div>
+    </section>
+
+    <section id="featured" class="section">
+      <h2 class="section-title">Featured Styles</h2>
+      <div class="product-grid" id="featured-products">
+
+      </div>
+    </section>
+
+    <section class="section categories-section">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Shirts">
+          </div>
+          <div class="category-info">
+            <h3>Shirts</h3>
+            <a href="#" class="btn-outline">Shop Now</a>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Jackets">
+          </div>
+          <div class="category-info">
+            <h3>Jackets</h3>
+            <a href="#" class="btn-outline">Shop Now</a>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pants">
+          </div>
+          <div class="category-info">
+            <h3>Pants</h3>
+            <a href="#" class="btn-outline">Shop Now</a>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Accessories">
+          </div>
+          <div class="category-info">
+            <h3>Accessories</h3>
+            <a href="#" class="btn-outline">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-content">
+        <h3>Join Our Community</h3>
+        <p>Subscribe to get 15% off your first order and updates on new arrivals</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="index.html#new-arrivals">New Arrivals</a>
+          <a href="index.html#women">Women</a>
+          <a href="men.html">Men</a>
+          <a href="index.html#sale">Sale</a>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <a href="#">Contact Us</a>
+          <a href="#">FAQs</a>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <a href="#">Our Story</a>
+          <a href="#">Sustainability</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer-col social">
+          <h4>Connect</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SHOP. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const mensProducts = [
+        {
+          id: 101,
+          title: "Classic White Shirt",
+          price: 59.99,
+          category: "shirts",
+          image: "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        },
+        {
+          id: 102,
+          title: "Slim Fit Chinos",
+          price: 69.99,
+          category: "pants",
+          image: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        },
+        {
+          id: 103,
+          title: "Denim Jacket",
+          price: 89.99,
+          category: "jackets",
+          image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        },
+        {
+          id: 104,
+          title: "Casual Sneakers",
+          price: 79.99,
+          category: "shoes",
+          image: "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        },
+        {
+          id: 105,
+          title: "Wool Blend Sweater",
+          price: 75.99,
+          category: "sweaters",
+          image: "https://images.unsplash.com/photo-1527719327859-c6ce80353573?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        },
+        {
+          id: 106,
+          title: "Leather Belt",
+          price: 45.99,
+          category: "accessories",
+          image: "https://images.unsplash.com/photo-1604176354204-9268737828e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        }
+      ];
+
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const productGrid = document.getElementById('featured-products');
+        productGrid.innerHTML = mensProducts.map(product => `
+          <div class="product-card">
+            <div class="product-image">
+              <img src="${product.image}" alt="${product.title}">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">${product.title}</h3>
+              <p class="product-price">$${product.price.toFixed(2)}</p>
+              <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
+            </div>
+          </div>
+        `).join('');
+
+
+        document.addEventListener('click', function(e) {
+          if (e.target.classList.contains('add-to-cart')) {
+            const productId = e.target.getAttribute('data-id');
+            const product = mensProducts.find(p => p.id == productId);
+            alert(`Added ${product.title} to your cart!`);
+          }
+        });
+
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        });
+
+        window.addEventListener('scroll', function() {
+          const navbar = document.querySelector('.navbar');
+          if (window.scrollY > 100) {
+            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            navbar.style.padding = '15px 0';
+          } else {
+            navbar.style.background = 'var(--light)';
+            navbar.style.padding = '20px 0';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

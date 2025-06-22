@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
       image: "https://images.unsplash.com/photo-1539533018447-63fcce2678e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
     }
   ];
-
+////////////////////////////
   function renderProducts() {
     const productGrid = document.querySelector('.product-grid');
     productGrid.innerHTML = products.map(product => `
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     `).join('');
   }
-
+/////////////////////////////////
   renderProducts();
 
   document.addEventListener('click', function(e) {
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-
+//////////////////////////////
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
-
+////////////////////////////////////////
   window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
