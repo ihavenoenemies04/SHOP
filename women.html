@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blush Boutique | Men's Collection</title>
+    <title>Blush Boutique | Women's Collection</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,8 +14,8 @@
         <a href="index.html" class="logo">Shop</a>
         <div class="nav-links">
           <a href="index.html#new-arrivals">New Arrivals</a>
-          <a href="women.html">Women</a>
-          <a href="men.html" class="active">Men</a>
+          <a href="women.html" class = "active">Women</a>
+          <a href="men.html"">Men</a>
         </div>
         <div class="nav-icons">
           <a href="#"><i class="fas fa-search"></i></a>
@@ -41,10 +41,10 @@
       <button class="btn checkout-btn">Checkout</button>
     </div>
 
-    <section class="hero men-hero">
+    <section class="hero women-hero">
       <div class="hero-content">
-        <h1>Men's Collection</h1>
-        <p>Elevate your wardrobe with our premium menswear</p>
+        <h1>Women's Collection</h1>
+        <p>Discover our elegant and feminine styles</p>
         <a href="#featured" class="btn">Shop Now</a>
       </div>
     </section>
@@ -61,20 +61,20 @@
       <div class="categories-grid">
         <div class="category-card">
           <div class="category-image">
-            <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Shirts">
+            <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Dresses">
           </div>
           <div class="category-info">
-            <h3>Shirts</h3>
-            <a href="#" class="btn-outline shop-category" data-category="shirts">Shop Now</a>
+            <h3>Dresses</h3>
+            <a href="#" class="btn-outline shop-category" data-category="dresses">Shop Now</a>
           </div>
         </div>
         <div class="category-card">
           <div class="category-image">
-            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Jackets">
+            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Sweaters">
           </div>
           <div class="category-info">
-            <h3>Jackets</h3>
-            <a href="#" class="btn-outline shop-category" data-category="jackets">Shop Now</a>
+            <h3>Sweaters</h3>
+            <a href="#" class="btn-outline shop-category" data-category="sweaters">Shop Now</a>
           </div>
         </div>
         <div class="category-card">
@@ -165,53 +165,53 @@
       // Products data
       const products = [
         {
-          id: 101,
-          title: "Classic White Shirt",
-          price: 59.99,
-          category: "shirts",
-          image: "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-        },
-        {
-          id: 102,
-          title: "Slim Fit Chinos",
-          price: 69.99,
-          category: "pants",
-          image: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-        },
-        {
-          id: 103,
-          title: "Denim Jacket",
+          id: 201,
+          title: "Pink Linen Dress",
           price: 89.99,
+          category: "dresses",
+          image: "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        },
+        {
+          id: 202,
+          title: "Blush Blazer",
+          price: 129.99,
           category: "jackets",
-          image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+          image: "https://images.unsplash.com/photo-1554412933-514a83d2f3c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
         },
         {
-          id: 104,
-          title: "Casual Sneakers",
-          price: 79.99,
-          category: "shoes",
-          image: "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-        },
-        {
-          id: 105,
-          title: "Wool Blend Sweater",
-          price: 75.99,
+          id: 203,
+          title: "Rose Sweater",
+          price: 65.99,
           category: "sweaters",
-          image: "https://images.unsplash.com/photo-1527719327859-c6ce80353573?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+          image: "https://plus.unsplash.com/premium_photo-1705554519628-5d17d796e488?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
-          id: 106,
-          title: "Shirt With 'Japan' Print",
-          price: 49.99,
-          category: "shirts",
-          image: "https://images.unsplash.com/photo-1631411721021-85a254b8d66f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+          id: 204,
+          title: "Pastel Pink Converse",
+          price: 59.99,
+          category: "shoes",
+          image: "https://images.unsplash.com/photo-1707013537977-90e0a6cfa484?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
-          id: 107,
-          title: "Beige Shirt",
-          price: 49.99,
+          id: 205,
+          title: "Salmon Shirt",
+          price: 45.99,
           category: "shirts",
-          image: "https://images.unsplash.com/photo-1630643003427-c45e438acbe3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+          image: "https://plus.unsplash.com/premium_photo-1671641797133-1e487350dfae?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+          id: 206,
+          title: "Dusty Pink Coat",
+          price: 159.99,
+          category: "outerwear",
+          image: "https://images.unsplash.com/flagged/photo-1554033750-2137b5cfd7ce?q=80&w=778&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+          id: 207,
+          title: "Floral Summer Dress",
+          price: 79.99,
+          category: "dresses",
+          image: "https://plus.unsplash.com/premium_photo-1723914108893-ac3047a4f1df?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
       ];
 
@@ -235,6 +235,7 @@
           </div>
         `).join('');
       }
+
 
       function updateCartCount() {
         const count = cart.reduce((total, item) => total + item.quantity, 0);
@@ -290,7 +291,7 @@
         renderCartItems();
       }
 
-
+ 
       function removeFromCart(productId) {
         cart = cart.filter(item => item.id !== productId);
         updateCartCount();
@@ -325,10 +326,9 @@
           if (e.target.classList.contains('add-to-cart')) {
             const productId = parseInt(e.target.getAttribute('data-id'));
             addToCart(productId);
-            
 
             cartDropdown.classList.add('show');
-            
+ 
             setTimeout(() => {
               if (cartDropdown.classList.contains('show')) {
                 cartDropdown.classList.remove('show');
@@ -348,17 +348,17 @@
             });
           }
           
-
+    
           if (e.target.closest('#cart-icon')) {
             cartDropdown.classList.toggle('show');
           }
           
-
+   
           if (e.target.classList.contains('close-cart')) {
             cartDropdown.classList.remove('show');
           }
           
-  
+      
           if (e.target.classList.contains('minus')) {
             const productId = parseInt(e.target.getAttribute('data-id'));
             updateQuantity(productId, -1);
@@ -369,7 +369,7 @@
             updateQuantity(productId, 1);
           }
           
-    
+      
           if (e.target.classList.contains('remove-item')) {
             const productId = parseInt(e.target.getAttribute('data-id'));
             removeFromCart(productId);
@@ -386,7 +386,7 @@
           });
         });
 
-
+   
         window.addEventListener('scroll', function() {
           const navbar = document.querySelector('.navbar');
           if (window.scrollY > 100) {
